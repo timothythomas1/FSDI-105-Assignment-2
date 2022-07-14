@@ -8,7 +8,7 @@ function saveUser(userObj){
 }
 function readUsers(){
     let data = localStorage.getItem(KEY);
-    console.log(data); // <-JSON
+    console.log("readUsers() has fired",data); // <-JSON
     if(!data){//is not data
         return []; //initializing an empty array when the is no data
     }

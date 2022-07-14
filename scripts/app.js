@@ -106,6 +106,7 @@ function isValid(aUsers){
     else{
         $(textPayment).removeClass('error-input')
     }
+    return valid
 }
 //  Create the register function
 function register(){
@@ -123,12 +124,10 @@ function register(){
     // Create the object
     let newUser = new User(userFname, userLname, userEmail, userPassword, userAge, userAddress, userPhone, userPayment, userColor);
     console.log(newUser)
+
     if(isValid(newUser)){
         saveUser(newUser);
     }
-        
-
-
 }
 
 // jQuery vs JavaScript 
