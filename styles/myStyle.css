@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#txtColor{
+    height: 50px;
+}
+.display-1{
+    color: black;
+    text-align: center;
+    background-color: #FFDB58;
+    box-shadow: 0px 10px 15px 15px grey;
+    margin-bottom: 50px;
+}
+.error-input{
+    background-color: #E5A4A4 !important;
+    color: white;
+}
