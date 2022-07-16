@@ -108,6 +108,10 @@ function isValid(aUsers){
     }
     return valid
 }
+
+function clearInputs(){
+    $(forReset)[0].reset()
+}
 //  Create the register function
 function register(){
     // Get the values from the form fields
@@ -127,6 +131,7 @@ function register(){
 
     if(isValid(newUser)){
         saveUser(newUser);
+        clearInputs();
     }
 }
 
@@ -138,7 +143,7 @@ function register(){
 // $("#txtLastName").hide();
 
 function init(){
-    //hook events
+    //ho
 }
 
 window.onload = init;

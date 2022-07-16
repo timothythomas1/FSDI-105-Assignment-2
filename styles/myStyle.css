@@ -2,7 +2,36 @@
     padding: 0px;
     margin: 0px;
 }
+body#home{
+    background-image: url("../img/wallpaperbetter.com_7680x4320\ \(3\).jpg");
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size:cover;
+    background-position: top ;
+    /* padding-top: 189.96px */
 
+
+}
+body#register{
+    background-image: url("../img/triMeshBrain.jpg");
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size:cover;
+    background-position:center ;
+
+    /* padding-bottom: auto; */
+    margin-bottom: auto;
+}
+body#user{
+    background-image: url("../img/astronautLeftB&W.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center ;
+
+    /* padding-bottom: auto; */
+    margin-bottom: auto;
+}
 #txtColor{
     height: 50px;
 }
@@ -10,9 +39,10 @@
     color: black;
     text-align: center;
     background-color: #FFDB58;
-    box-shadow: 0px 10px 15px 15px grey;
+    box-shadow: 0px 10px 15px 15px black;
     margin-bottom: 50px;
 }
+
 .error-input{
     background-color: #E5A4A4 !important;
     color: white;

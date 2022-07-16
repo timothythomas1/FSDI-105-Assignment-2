@@ -9,80 +9,81 @@
     <script src="https://kit.fontawesome.com/9bed12024e.js" crossorigin="anonymous"></script>
     <title>User System</title>
 </head>
-<body>
+<body id="register">
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="fa-solid fa-user-astronaut fa-2xl"></i>    The Grid</a>
+          <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-spaghetti-monster-flying fa-2xl"></i>    The Nebula</a>
+          <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-earth-americas"></i>    Home</a>
+          <a class="navbar-brand" href="./user.html"><i class="fa-solid fa-user-astronaut"></i>    User</a>
           <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </form>
         </div>
     </nav>
     <header>
-        <h1 class="display-1" >Welcome to the user system</h1>
+        <h1 class="display-1" >Join the Collective Conscience    </h1>
     </header>
     <main class="container">
-        <div class="form-container">
-            <!-- name, lastname, email, password, password confirmation, color, payment method-->
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">First Name</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                id="textFirstName">
+        <form action="" id="forReset">
+            <div class="form-container" >
+                <!-- name, lastname, email, password, password confirmation, color, payment method-->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">First Name</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                    id="textFirstName">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">Last Name</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                    id="textLastName">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">Email</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                    id="textEmail">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">Password</span>
+                    <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                    id="textPassword">
+                </div>
+                <!-- <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">Confirm Password</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                    id="textConfirmPassword">
+                </div> -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">age</span>
+                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                    id="textAge">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">Address</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                    id="textAddress">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">Phone Number</span>
+                    <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} !important"
+                    id="textPhone">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">Payment Method</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                    id="textPayment">
+                </div>
+                <div class="input-group mb-3 color">
+                    <span class="input-group-text" id="inputGroup-sizing-default ">Color</span>
+                    <input type="color" id="txtColor">
+                </div>
+                <div class="d-grid gap-2">
+                    <button onclick="register();"
+                    class="btn btn-primary" type="button">Add new user</button>
+                </div>
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">Last Name</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                id="textLastName">
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">Email</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                id="textEmail">
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">Password</span>
-                <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                id="textPassword">
-            </div>
-            <!-- <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">Confirm Password</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                id="textConfirmPassword">
-            </div> -->
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">age</span>
-                <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                id="textAge">
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">Address</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                id="textAddress">
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">Phone Number</span>
-                <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} !important"
-                id="textPhone">
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default ">Payment Method</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                id="textPayment">
-            </div>
-            <div class="input-group mb-3 color">
-                <span class="input-group-text" id="inputGroup-sizing-default ">Color</span>
-                <input type="color" id="txtColor">
-            </div>
-            <div class="d-grid gap-2">
-                <button onclick="register();"
-                class="btn btn-primary" type="button">Add new user</button>
-            </div>
-        </div>
+        </form>
     </main>
-    <footer>
-
-    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./scripts/storeManager.js"></script>
     <script src="./scripts/app.js"></script>
